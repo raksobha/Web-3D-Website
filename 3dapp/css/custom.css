@@ -17,6 +17,7 @@
 
 body {
     background-color: rgba(239, 252, 255, 1.0);
+   
 }
 
 .main_contents {
@@ -76,6 +77,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
 }
 
+.card-text {
+    font-size: 13px;
+}
 /* CSS rule to style the mobile logo */
 .logo {
     margin-top: 3px;
@@ -239,17 +243,41 @@ h1, h2, h3, h4, h5, h6 {
     color: rgb(255, 255, 255);
     font-size: 14px;
     text-decoration: none;
+    margin-bottom: 0;
 }
 
 .copyright {
-    padding-top: 8px;
+    padding-top: 5px;
 }
 
 .social {
-    padding-top: 0px;
+    padding-top: 7px;
     
 }
 
+.fa-twitter:before {
+    content: "\f081";
+    color: green;
+    font-size: 1em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: yellow;
+    font-size: 1em;
+}
+
+.fa-google-plus:before {
+    content: "\f0d4"; 
+    color: blue;
+    font-size: 1em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: red;
+    font-size: 1em; 
+}
 
 
 
@@ -265,9 +293,32 @@ h1, h2, h3, h4, h5, h6 {
     body {
         background-color: rgb(202, 181, 181);
     }
+
+    #main_3d_image {
+        height: 288px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(202, 181, 181);
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+
     /* CSS rule to style the footer */
     .footer {
-        background-color: #9b7ed1;
+        background-color: #5a408a;
         height: 60px;
     }
 
@@ -281,28 +332,273 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .copyright {
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .social {
-        padding-top: 7px;
+        padding-top: 10px;
     }
 
-
+    .fa-twitter:before {
+        color: rgb(216, 204, 37);
+    }
+    
+    .fa-github-square:before {
+        color: rgb(63, 61, 223);
+    }
+    
+    .fa-google-plus:before {
+        color: rgb(218, 37, 52);
+    }
+    
+    .fa-facebook-square:before {
+        color: rgb(38, 161, 55);
+    }
 
 
 
 
 }
 
+
+
+
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+@media (min-width: 768px) { 
+    body {
+        background-color: rgb(218, 216, 148);
+    }
+    
+    #main_3d_image {
+        height: 363px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: crimson;
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: darkcyan;
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        border: 0px solid rgba(0,0,0,.125);
+        /* border-radius: .25rem;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: rgb(218, 216, 148);
+    }
+
+    .logo h1 {
+        font-size: 41px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-size: 43px;
+        margin-top: 5px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 25px;
+        margin-top: 11px;
+        margin-bottom: 3px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo h4 {
+        font-size: 6px;
+        margin-top: 5px;
+        margin-bottom: -17px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 44px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 5px;
+    }
+
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+    .dropdown-menu {
+        margin-top: 17px;
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #91df8f; /* Set navbar footer background color same as header */
+        height: 70px;
+    }
+
+    .footerInfo {
+        margin-top: 10px;
+    }
+    
+    .footerInfo .navbar-text {
+        display: inline;
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(37, 8, 8);
+        font-size: 12px;
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(59, 15, 15);
+        font-size: 16px;
+    }
+
+    /* Social media icons CSS rules*/
+    .social {
+        padding: 5px;
+    }
+
+    .social > a {
+        font-size: 14px;  
+    }
+
+    .social > p {
+        font-size: 14px;
+    }
+
+    /* CSS rules for the social media font awesome iocns */
+    .fa-twitter:before {
+        color: rgb(37, 144, 216);
+    }
+
+    .fa-github-square:before {
+        color: rgb(13, 51, 5);
+    }
+
+    .fa-google-plus:before {
+        color: rgb(247, 232, 23);
+    }
+
+    .fa-facebook-square:before {
+        color: rgb(230, 8, 8);
+    }
+
+}
+
+
+
+
+
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (min-width: 992px) { 
+    body {
+        background-color: rgb(192, 224, 236);
+    }
+    
+    #main_3d_image {
+        height: 450px;
+    }
+
+    #main_text {
+        float: left;
+        margin-top: 7%;
+    }
+
+    #main_text h2 {
+        color: rgb(143, 114, 120);
+        font-size: 30px;
+    }
+    
+    #main_text h3 {
+        color: rgb(184, 32, 204);
+        font-size:22px;
+    }
+    
+    #main_text p {
+        font-size: 15px;
+    }
+
+    .card {
+        background-color: rgb(192, 224, 236);
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        background-color: #8fbfdf; /* Set navbar footer background color same as header */
+    }
+
+    .footerInfo .navbar-text > p {
+        color: rgb(240, 14, 14);
+    }
+
+    /* Copyright CSS rules */
+    .copyright > p {
+        color: rgb(240, 14, 14);
+    }
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px) {
+    #main_3d_image {
+        height: 550px;
+    }
+
+    .footer {
+        background-color: rgb(159, 182, 120); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(228, 240, 208);
+    }
+
+    .card {
+        background-color: rgb(228, 240, 208);
+    } 
+}
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { ... }
+@media (min-width: 1400px) { 
+    #main_3d_image {
+        height: 600px;
+    }
+
+    .footer {
+        background-color: rgb(70, 97, 25); /* Set navbar footer background color same as header */
+    }
+
+    body {
+        background-color: rgb(232, 236, 163);
+    }
+
+    .card {
+        background-color: rgb(232, 236, 163);
+    }
+}
