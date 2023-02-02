@@ -258,31 +258,35 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+
+
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px){ 
+    body {
+        background-color: rgb(202, 181, 181);
+    }
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #5a408a;
+        height: 60px;
+    }
 
-/* CSS rule to style the footer */
-.footer {
-    background-color: #257600;
-    height: 60px;
-}
+    .navbar-text > a {
+        font-size: 10px;
+    }
 
-.navbar-text > a {
-    font-size: 10px;
-}
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
 
-.navbar-text > p {
-    color: rgb(228, 75, 15);
-    font-size: 18px;
-}
+    .copyright {
+        padding-top: 20px;
+    }
 
-.copyright {
-    padding-top: 20px;
-}
-
-.social {
-    padding-top: 7px;
-}
+    .social {
+        padding-top: 7px;
+    }
 
 
 
