@@ -1,0 +1,699 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Oswald;
+    src: url(../assets/fonts/Oswald-Regular.ttf);
+}
+@font-face {
+    font-family: colacokaFont;
+    src: url(../assets/fonts/Suara-Aku.ttf);
+}
+@font-face {
+    font-family: franchise;
+    src: url(../assets/fonts/FranchiseFilled.ttf);
+}
+@font-face {
+    font-family: superRetro;
+    src: url(../assets/fonts/Super-Retro-Italic-M54.ttf);
+}
+
+/* X-Small devices (portrait phones, less than 576px)
+   No media query for `xs` since this is the default in Bootstrap
+*/
+
+body {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex:1;
+}
+
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+	/*font-family: cocaColaFont;*/
+}
+
+.card {
+    border: 1px solid rgba(61, 55, 55, 0.125);
+    background-color: rgb(119, 20, 20);
+    /* border-radius: 0.25rem; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 13px;
+    text-align:justify;
+}
+/* CSS rule to style the mobile logo */
+.logo {
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+.logo h1 {
+    font-family: colacokaFont;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 19px;
+    padding-top: 6px;
+    padding-left: 0px;
+    padding-right: 2px;
+}
+
+.logo h2 {
+    font-family: colacokaFont;
+    font-size: 34px;
+    margin-top: -68px;
+    margin-bottom: -1px;
+    padding-top: 0px;
+    padding-left: 54px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.logo h3 {
+    font-family: colacokaFont;
+    font-size: 26px;
+    margin-top: -47px;
+    margin-bottom: 7px;
+    padding-top: 0px;
+    padding-left: 65px;
+    padding-bottom: -3px;
+}
+
+.logo h4 {
+    font-family: colacokaFont;
+    font-size: 14px;
+    margin-top: -16px;
+    margin-bottom: -19px;
+    padding-top: 0px;
+    padding-left: 77px;
+    padding-right: 2px;
+}
+.logo h5 {
+    font-family: colacokaFont;
+    font-size: 16px;
+    margin-top: 1px;
+    margin-bottom: -45px;
+    padding-top: 4px;
+    padding-left: 24px;
+    padding-right: 4px;
+}
+
+.logo p {
+    font-size: 8px;
+    margin-top: 44px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 33px;
+}
+
+    
+/* New CSS rules to better position the navbar and increase its height, Bootstrap defaults tend to make your site look like a Bootstrap clone! 
+*/
+
+/* CSS rule to overwrite the navbar background and border color — again, helps to stop your site looking like a Bootstrap clone! 
+*/
+.navbar_coca_cola {
+    background-color: #a80000; /* Set navbar background color */
+    border-width: 0px;
+    min-height: 80px;
+}
+
+/* CSS rule to overwrite the navbar-brand font color
+*/
+.navbar_coca_cola .navbar-brand {
+    color: rgb(0, 0, 0);
+ }
+    
+/* CSS rule to overwrite the navbar-brand font hover color
+*/
+.navbar_coca_cola .navbar-brand:hover {
+    color: rgb(190, 84, 23);
+}
+
+
+.navbar_coca_cola .navbar-nav > li > a {
+    font-family: superRetro;
+    font-size: 14px;
+    color: rgb(0, 0, 0); 
+    text-align: end;
+    padding-right: 20px;
+}
+
+
+.navbar_coca_cola .navbar-nav .nav-item {
+    margin-top: 0px;
+}
+
+/* CSS rule to overwrite the bootstrap.css rules for setting the active font color and background colour
+*/
+.navbar_coca_cola .navbar-nav .nav-item > .active, 
+.navbar_coca_cola .navbar-nav > .active > a:hover, 
+.navbar_coca_cola .navbar-nav > .active > a:focus {
+    color:  #b64a0b; /* Font color for active font */
+}
+
+/* A set of CSS rules to change the Bootstrap defaults for the menu link text color, hover, background, focus
+*/
+    
+/* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+*/
+.navbar_coca_cola .navbar-nav > li > a:hover, 
+.navbar_coca_cola  .navbar-nav > li > a:focus {
+    color: rgb(224, 185, 7);  
+}
+
+/* These next two CSS rules control the style of the icon bar */
+.navbar_coca_cola .navbar-toggler {
+    outline: none !important;  
+}
+
+.navbar_coca_cola  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Let's style the dropdown menu
+*/
+
+.dropdown-menu {
+    font-family: superRetro;
+    font-size: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 7px;
+    border: none;
+    min-width: 0rem !important;
+    width: 100%;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000000;
+    padding: 0.5rem 0.25rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: rgb(224, 185, 7);  
+}
+
+/* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color:  #b64a0b; /* Font color for active font */
+    border-color: #dee2e6 #dee2e6 #524c4c;
+}
+
+.nav-tabs .nav-link {
+    font-family: superRetro;
+    font-size: 9px;
+    color: white;  
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+/* Added this to emulate the nav-bar link styling */
+.nav-tabs .nav-link:hover {
+    color: rgb(224, 185, 7); 
+    border-color: #dee2e6 #dee2e6 #e0b907;
+    border: 1px solid transparent;
+}
+
+.video_container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+.video_container iframe, .video_container object, .video_container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: #000000; /* Set navbar footer background 
+    color same as header */
+    display: flex;
+    border-top: double #ffffff;
+    height: 70px;
+}
+
+.navbar-text > a {
+    font-size: 16px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer_contents {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(1fr,2);
+    grid-template-areas: "rec1 rec2";
+}
+
+.copyright {
+    width: 100%;
+    grid-area: rec1;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.copyright a {
+    text-decoration: none;
+    color: #a80000;
+}
+.copyright a:hover {
+    text-decoration: none;
+    color: #e6d710;
+}
+
+.social {
+    text-align: center;
+    grid-area: rec2;
+    padding-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fa-twitter:before {
+    content: "\f081";
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.fa-github-square:before {
+    content: "\f092"; 
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.fa-google-plus:before {
+    content: "\f0d4"; 
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+}
+
+.fa-facebook-square:before {
+    content: "\f082";
+    color: rgb(255, 255, 255);
+    font-size: 1em; 
+}
+
+
+/* Coke.html*/
+
+.drinksText h3{
+    font-family: superRetro;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.btn-group {
+    /* background-color: rgba(0, 0, 255, 0.3);  */
+    border-color: black; 
+    border-style: solid;
+    border-width: 0px;
+    margin-top: 12px;
+    padding: 0px;
+}
+.btn-group .btn{
+    background-color: #000000;
+    border-color: #2c2929;
+}
+.btn-group .btn:hover{
+    color: rgb(224, 185, 7);  
+    border-color: rgb(224, 185, 7);
+}
+
+.btn-group .btn a{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 600; 
+}
+
+.btn-responsive {
+    padding: 6px 10px;
+    font-size: 90%;
+    line-height: 1.3;
+    white-space: normal !important;
+}
+
+.img-thumbnail {
+    padding: 0.1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 4px;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 0.25rem;
+    max-width: 30%;
+    height: auto;
+  
+}
+
+.model3D  {
+    background-color: rgb(119, 20, 20); 
+    border-radius: 5px;
+    padding: 2px;
+    height: 250px;
+}
+
+X3D, x3d {
+    width: 100%;
+    height: 100%
+}
+
+.gallery p{
+    font-family: superRetro;
+    color: #91df8f;
+}
+.advert p{
+    font-family: superRetro;
+    color: #91df8f;
+}
+.advert .btn{
+    font-family: superRetro;
+    background-color: #000000;
+    border-color: #dee2e6;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.colacoka p{
+    color: #ffffff;
+}
+.colacoka .btn{
+    font-family: superRetro;
+    background-color: #000000;
+    border-color: #dee2e6;
+    color: #ffffff;
+    margin-top: 10px;
+}
+#x3dbrand {
+    font-family: superRetro;
+    color: #000000;
+}
+#x3dModelTitle {
+    color: #746969;
+    font-size: 10px;
+}
+#x3dModelDescription {
+    color: #000000;
+    font-weight: 500;
+}
+
+#models {
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.modal-content {
+    background-color: #747373;
+    color: #dfd9d9;
+}
+.modal-footer .btn {
+    background-color: #000000;
+    border-radius: 0.25rem;
+    border-color: #a80000;
+}
+
+/* Extra page */
+#github {
+    padding-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#github #main_text {
+    text-align: center;
+    color: #dfd9d9;
+    margin-top: 20px;
+}
+#title_github {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#main_text a{
+    font-size: 30px;
+}
+
+#statement {
+    padding-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+#statement #main_text {
+    text-align: center;
+    color: #dfd9d9;
+    margin-top: 20px;
+}
+
+#main_text {
+    padding-top: 40px;
+    border-top: 2px solid #dee2e6;
+}
+
+/* Home page*/
+.carousel-caption h3{
+    font-size: 50px;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){ 
+    #main_3d_image {
+        height: 288px;
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+    .navbar_coca_cola {
+        min-height: 90px;
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    .navbar-text > a {
+        font-size: 17px;
+    }
+
+    .navbar-text > p {
+        font-size: 16px;
+    }
+
+    /* Coke.html */
+    .model3D  {
+        height: 350px;
+    }
+
+    .drinksText h3{
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+    }
+    .btn-group .btn a{
+        text-align: center;
+        font-size: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: 600; 
+    }
+    .btn-responsive {
+        padding: 6px 5px;
+        font-size: 50%;
+    }
+    .col-sm-4 {
+        padding: 0;
+        padding-right: 15px;
+    }
+}       
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+
+    .logo h1 {
+        font-size: 50px;
+        margin: 0;
+        margin-top: 0px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-size: 41px;
+        margin-top: -62px;
+        margin-bottom: -24px;
+        padding-top: 0px;
+        padding-left: 67px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+
+    .logo h3 {
+        font-size: 29px;
+        margin-top: -42px;
+        margin-bottom: 5px;
+        padding-top: 0px;
+        padding-left: 79px;
+        padding-bottom: -3px;
+    }
+
+    .logo h4 {
+        font-size: 20px;
+        margin-top: -16px;
+        margin-bottom: -19px;
+        padding-top: 0px;
+        padding-left: 94px;
+        padding-right: 2px;
+    }
+    .logo h5 {
+        font-size: 20px;
+        margin-top: 1px;
+        margin-bottom: -44px;
+        padding-top: 0px;
+        padding-left: 28px;
+        padding-right: 4px;
+    }
+    
+
+    .logo p {
+        font-size: 10px;
+        margin-top: 44px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 40px;
+    }
+
+
+    .dropdown-menu {
+        margin-top: 17px;
+    }
+
+    /* Footer information CSS rules */
+    .footer {
+        height: 90px;
+    }
+
+    .social > a {
+        font-size: 16px;  
+    }
+
+    .social > p {
+        font-size: 16px;
+    }
+
+    .copyright p{
+        font-size: 19px;
+    }
+
+    /* Coke.html */
+    .model3D  {
+        height: 400px;
+    }
+
+    .nav-tabs .nav-link{
+        font-size: 15px
+    }
+    #x3dModelTitle {
+        font-size: 14px;
+    }
+    #x3dbrand {
+        font-size: 22px;
+    }
+    #x3dModelDescription {
+        font-size: 17px;
+    }
+  
+    .drinksText h3{
+        font-size: 20px;
+    }
+    .btn-group .btn a{
+        text-align: center;
+        font-size: 13px;
+        color: rgb(255, 255, 255);
+        font-weight: 600; 
+    }
+    
+    .btn-responsive {
+        padding: 6px 10px;
+        font-size: 67%;
+        line-height: 1.3;
+        white-space: normal !important;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Coke.html */
+    .model3D  {
+        height: 420px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Coke.html */
+    .model3D  {
+        height: 460px;
+    }
+
+    .drinksText h3{
+        font-size: 25px;
+    }
+    .btn-group .btn a{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600; 
+    }
+    
+    .btn-responsive {
+        padding: 6px 10px;
+        font-size: 95%;
+        line-height: 1.4;
+        white-space: normal !important;
+    }
+    .navbar_coca_cola .navbar-nav > li > a {
+        font-size: 25px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  /* Coke.html */
+    .model3D  {
+        height: 500px;
+    }
+    
+}
