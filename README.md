@@ -4,6 +4,7 @@ Created a responsive and mobile first Product Site centred around X3D, while con
 All 3D models were created and animated by myself using Cinema4D and 3ds Max.
 
 To run this website I recommend hosting a local server with the 3DAppWebsite as the root.
+
 See below for a few screenshots of the final website
 
 <p align="center">
